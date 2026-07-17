@@ -1,12 +1,13 @@
-#kullanıcıdan doğum yılını metin olarak alıyoruz.
-dogum_yili_yazi = input("lütfen dogum yilinizi giriniz: ")
+#kullanıcıdan doğrudan yaşı alıp tam sayıya çeviriyoruz
+yas = int(input("lütfen yasinizi giriniz: "))
 
-#alınan metni matematiksel tam sayıya (int) dönüştürüyoruz.
-dogum_yili_sayi = int(dogum_yili_yazi)
+#karar mekanizması başlıyor
+if yas >= 18:
+    #bu satırda içerde! sadece yaş 18 veya büyükse çalışır.
+    print("Tebrikler! Ehliyet almaya hak kazanabilirsiniz. ")
+else:
+    # bu satır da içerde! Şart sağlanmazsa çalışır.
+    print ("maalesef yasiniz ehliyet almak icin yetersiz. ")
 
-#yaş hesabı yapıyoruz (şu anki yıldan çıkarıyoruz)
-yas = 2026 - dogum_yili_sayi
-
-#sonucu ekrana yazdırıyoruz
-print("harika! hesaplamalarima göre suanki yasiniz : ")
-print(yas)
+#bu satır en başta (girintisiz) , yani if/else ile bağı yok. her halükarda çalışır.
+print ("program başariyla sonlandi. ")        
