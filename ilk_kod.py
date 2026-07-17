@@ -1,0 +1,1 @@
+print("Mühendislik temelleri atiliyor !")
