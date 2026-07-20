@@ -1,19 +1,28 @@
 #include <stdio.h>
 
-int main(){
-    float ders_notu = 85.5 ;  // kendi not ortalaman gibi bir değer atadık.
+int main (){
+    float ders_notu;  //değeri boş bıraktık, kullanıcı dolduracak
+
+    // kullanıcıya ne yapması gerektiğini söylüyoruz
+    printf("Lütfen ders notunuzu giriniz:");
+
+    //klavyeden girilen float değeri alıp ders_notu değişkeninin adresine (&) kaydediyoruz
+    scanf("%f" , &ders_notu);
 
     printf("girilen not : %.2f\n" , ders_notu);
-    
-    //Koşul blokları başlıyor
-    if(ders_notu >= 90.0){
-        printf("Tebrikler! Sersi AA ile gectiniz.\n");
+
+    if (ders_notu >= 90.0){
+        printf("tebrikler ! dersi AA ile gectiniz.");
     }
-    else if (ders_notu >= 70.0 && ders_notu < 90.0) {
-        printf("Guzel basari! Dersi iyi bir dereceyle gectiniz.\n ");
+    else if (ders_notu >= 70.0 && ders_notu <90.0)
+    {
+        printf("guzel basari ! dersi iyi bir dereceyle gectiniz.\n");
     }
-    else {
-        printf("Maalesef dersten kaldiniz, baska dönemde basarilar.\n");
+    else if(ders_notu >= 50.0 && ders_notu < 70.0)
+    {
+        printf("gectiniz ama sonraki donem çok çalişmalisiniz\n");
     }
-    return 0;
+    else{
+        printf("maalesef dersten kaldiniz\n");
+    }
 }
