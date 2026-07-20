@@ -1,10 +1,3 @@
-#başlangıç değerimizi belirliyoruz (sayaç)
-sayac = 1
-
-# 2. döngü şartını yazıyoruz: sayac 5'e eşit veya küçük olduğu sürece çalış.
-while sayac <= 5:
-    print(f"{sayac}. kez: Python öğreniyorum! ")
-
-#3. çok önemli: sayacı 1 artırıyoruz ki döngü bir gün bitsin!
-
-    sayac = sayac + 1    
+#range(1, 6) demek: 1'den başla 6'ya kadar git(6 dahil değil)
+for sayac in range(1, 6):
+    print(f"For ile {sayac}. tur!")
