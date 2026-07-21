@@ -15,5 +15,5 @@ int main(){
     printf("Yeni Sayi Degeri          : %d\n" , sayi);
 
     return 0;
-
+   
 }
